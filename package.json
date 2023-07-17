@@ -1,0 +1,32 @@
+{
+  "name": "hwtop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "menu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write ./scr/",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrealzhik/3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "axios": "^1.4.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
