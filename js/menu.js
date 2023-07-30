@@ -1,5 +1,6 @@
 import { startGame } from "./startgame.js";
 import "../style.css";
+// import { flipStartCard } from "./startgame.js";
 
 export const createGameMenu = () => {
     const appEl = document.querySelector('.game__section');

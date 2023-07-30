@@ -14,10 +14,10 @@ module.exports = {
     module: {
         rules: [
             {test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"]},
-            {
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: "asset/resource",
-            },
+            // {
+            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
+            //     type: "asset/resource",
+            // },
             {
                 test: /\.(woff|woff2|eot|ttf|ptf)$/i,
                 type: "asset/resource",
