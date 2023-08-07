@@ -1,6 +1,8 @@
-import { startGame } from "./startgame.js";
+import { startGame } from "./startgame";
 import "../style.css";
-// import { flipStartCard } from "./startgame.js";
+
+
+
 
 export const createGameMenu = () => {
     const appEl = document.querySelector('.game__section');
@@ -37,19 +39,19 @@ export const createGameMenu = () => {
             <button id="startBtn" class="start-btn">Старт</button>
         </div>`
 
-    appEl.innerHTML = menuHtml;
+    appEl!.innerHTML = menuHtml;
 
     const radioChoiceElemenet = document.querySelectorAll(`input[type=radio][name="diff"]`);
     const startElement = document.getElementById('startBtn');
-    let diff = 0;
+    let diff = "";
 
     radioChoiceElemenet.forEach((radio) =>
         radio.addEventListener('change', () => {
-            diff = radio.value;
+            diff = (radio as HTMLInputElement).value;
         })
     );
 
-    startElement.addEventListener('click', () => {
+    startElement!.addEventListener('click', () => {
         if (!diff) {
             alert('Выберите сложность!');
             return;
@@ -58,10 +60,3 @@ export const createGameMenu = () => {
     });
 }
 createGameMenu()
-
-
-
-
-
-
-

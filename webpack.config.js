@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
-    entry: './js/menu.js',
+    entry: './js/menu.ts',
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",
@@ -13,16 +13,24 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /\.ts$/,
+                use: "ts-loader",
+                exclude: /node_modules/
+            },
             {test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"]},
-            // {
-            //     test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            //     type: "asset/resource",
-            // },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: "asset/resource",
+            },
             {
                 test: /\.(woff|woff2|eot|ttf|ptf)$/i,
                 type: "asset/resource",
             }
         ]
+    },
+    resolve: {
+        extensions: [".ts", ".js"],
     },
     plugins: [
         new HtmlWebpackPlugin({
