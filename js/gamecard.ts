@@ -1,4 +1,4 @@
-export const createGameCard = (backface, frontface) => {
+export const createGameCard = (backface: string, frontface: string) => {
     const cards = document.createElement('div');
     cards.classList.add('game__card', `frontface-${frontface}`);
 
