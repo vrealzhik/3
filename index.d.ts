@@ -1,2 +1,2 @@
-declare module "*.jpg"
-declare module "*.jepg"
+declare module '*.jpg'
+declare module '*.jepg'

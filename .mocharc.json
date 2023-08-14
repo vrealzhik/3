@@ -1,4 +1,0 @@
-{
-    "require": "./reg.js",
-    "reporter": "list"
-}

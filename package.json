@@ -4,12 +4,13 @@
     "description": "",
     "main": "/menu.ts",
     "scripts": {
-        "test": "nyc ./node_modules/.bin/_mocha 'test/**/*.test.js",
-        "format": "prettier --write ./scr/",
+        "test": "jest",
+        "format": "prettier --write .",
         "prepare": "husky install",
         "build": "webpack --mode production",
         "start": "webpack-dev-server --open --mode development",
-        "lint:ts": "tsc --noEmit"
+        "lint:ts": "tsc --noEmit",
+        "lint:css": "stylelint ./**.css"
     },
     "repository": {
         "type": "git",
@@ -41,6 +42,9 @@
         "mocha": "^10.2.0",
         "nyc": "^15.1.0",
         "prettier": "^3.0.0",
+        "stylelint": "^15.10.2",
+        "stylelint-config-standard": "^34.0.0",
+        "stylelint-prettier": "^4.0.2",
         "ts-loader": "^9.4.4",
         "ts-node": "^10.9.1",
         "typescript": "^5.1.6",

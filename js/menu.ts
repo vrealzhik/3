@@ -1,11 +1,8 @@
-import { startGame } from "./startgame";
-import "../style.css";
-
-
-
+import { startGame } from './startgame'
+import '../style.css'
 
 export const createGameMenu = () => {
-    const appEl = document.querySelector('.game__section');
+    const appEl = document.querySelector('.game__section')
 
     const menuHtml = `       
         <div class="choice-box">
@@ -39,24 +36,26 @@ export const createGameMenu = () => {
             <button id="startBtn" class="start-btn">Старт</button>
         </div>`
 
-    appEl!.innerHTML = menuHtml;
+    appEl!.innerHTML = menuHtml
 
-    const radioChoiceElemenet = document.querySelectorAll(`input[type=radio][name="diff"]`);
-    const startElement = document.getElementById('startBtn');
-    let diff = "";
+    const radioChoiceElemenet = document.querySelectorAll(
+        `input[type=radio][name="diff"]`,
+    )
+    const startElement = document.getElementById('startBtn')
+    let diff = ''
 
     radioChoiceElemenet.forEach((radio) =>
         radio.addEventListener('change', () => {
-            diff = (radio as HTMLInputElement).value;
-        })
-    );
+            diff = (radio as HTMLInputElement).value
+        }),
+    )
 
     startElement!.addEventListener('click', () => {
         if (!diff) {
-            alert('Выберите сложность!');
-            return;
+            alert('Выберите сложность!')
+            return
         }
-        startGame(diff);
-    });
+        startGame(diff)
+    })
 }
 createGameMenu()

@@ -1,10 +1,13 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+/* stylelint-disable prettier/prettier */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0 px;
+  padding: 0 px;
 }
 
 @font-face {
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -22,7 +25,7 @@ body {
 }
 
 .min {
-  color: #FFF;
+  color: #fff;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: StratosSkyeng;
   font-size: 16px;
@@ -33,7 +36,7 @@ body {
 }
 
 .sek {
-  color: #FFF;
+  color: #fff;
   font-variant-numeric: lining-nums proportional-nums;
   font-family: StratosSkyeng;
   font-size: 16px;
@@ -44,7 +47,7 @@ body {
 }
 
 .time {
-  color: #FFF;
+  color: #fff;
   font-family: StratosSkyeng;
   font-size: 64px;
   font-style: normal;
@@ -71,9 +74,8 @@ body {
 }
 
 .title {
-  text-align: center;
   width: 208px;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -88,7 +90,7 @@ body {
   display: flex;
   gap: 26px;
   margin-bottom: 67px;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-style: normal;
   font-weight: 400;
   font-size: 64px;
@@ -105,6 +107,10 @@ body {
   box-sizing: border-box;
 }
 
+.complex label:hover {
+  border: 5px solid #7db7d4;
+}
+
 .complex input[type='radio'] {
   display: none;
 }
@@ -113,23 +119,19 @@ body {
   border: 5px solid #0080c1;
 }
 
-.complex label:hover {
-  border: 5px solid #7db7d4;
-}
-
 .start-btn {
   border: none;
   background: #7ac100;
   border-radius: 12px;
   width: 246px;
   height: 50px;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -158,11 +160,11 @@ body {
 }
 
 .card__back {
-  background: #ffffff;
+  background: #fff;
   border-radius: 4px;
   width: 95px;
   height: 133px;
-  background-image: url(img/рубашка.svg);
+  background-image: url("img/рубашка.svg");
   margin-bottom: 12px;
 }
 
@@ -173,7 +175,7 @@ body {
   height: 50px;
   margin-top: 30px;
   margin-right: 50px;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -186,24 +188,26 @@ body {
 }
 
 .restart__button {
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-style: normal;
   width: 246px;
   height: 50px;
-  background: #7AC100;
+  background: #7ac100;
   border-radius: 12px;
   font-size: 24px;
   line-height: 32px;
   text-align: center;
-  font-feature-settings: 'pnum'on, 'lnum'on;
-  color: #FFFFFF;
+  font-feature-settings:
+    'pnum'on,
+    'lnum'on;
+  color: #fff;
   cursor: pointer;
   border: none;
   margin-top: 45px;
 }
 
 .game__card {
-  background: url(img/рубашка.svg);
+  background: url("img/рубашка.svg");
   width: 93px;
   height: 133px;
   aspect-ratio: 1;
@@ -218,9 +222,8 @@ body {
 .game__card_list {
   max-width: 1024px;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-direction: row;
   margin: auto;
 }
 
@@ -259,149 +262,148 @@ body {
 }
 
 .game__card.frontface-6b.flip {
-  background: url(img/6diamonds.png);
+  background: url("img/6diamonds.png");
 }
 
 .game__card.frontface-7b.flip {
-  background: url(img/7diamonds.png);
+  background: url("img/7diamonds.png");
 }
 
 .game__card.frontface-8b.flip {
-  background: url(img/8diamonds.png);
+  background: url("img/8diamonds.png");
 }
 
 .game__card.frontface-9b.flip {
-  background: url(img/9diamonds.png);
+  background: url("img/9diamonds.png");
 }
 
 .game__card.frontface-10b.flip {
-  background: url(img/10diamonds.png);
+  background: url("img/10diamonds.png");
 }
 
 .game__card.frontface-Jb.flip {
-  background: url(img/Jdiamonds.png);
+  background: url("img/Jdiamonds.png");
 }
 
 .game__card.frontface-Qb.flip {
-  background: url(img/Qdiamonds.png);
+  background: url("img/Qdiamonds.png");
 }
 
 .game__card.frontface-Kb.flip {
-  background: url(img/Kdiamonds.png);
+  background: url("img/Kdiamonds.png");
 }
 
 .game__card.frontface-Ab.flip {
-  background: url(img/Adiamonds.png);
+  background: url("img/Adiamonds.png");
 }
 
 .game__card.frontface-6p.flip {
-  background: url(img/6spades.png);
+  background: url("img/6spades.png");
 }
 
 .game__card.frontface-7p.flip {
-  background: url(img/7spades.png);
+  background: url("img/7spades.png");
 }
 
 .game__card.frontface-8p.flip {
-  background: url(img/8spades.png);
+  background: url("img/8spades.png");
 }
 
 .game__card.frontface-9p.flip {
-  background: url(img/9spades.png);
+  background: url("img/9spades.png");
 }
 
 .game__card.frontface-10p.flip {
-  background: url(img/10spades.png);
+  background: url("img/10spades.png");
 }
 
 .game__card.frontface-Jp.flip {
-  background: url(img/Jspades.png);
+  background: url("img/Jspades.png");
 }
 
 .game__card.frontface-Qp.flip {
-  background: url(img/Qspades.png);
+  background: url("img/Qspades.png");
 }
 
 .game__card.frontface-Kp.flip {
-  background: url(img/Kspades.png);
+  background: url("img/Kspades.png");
 }
 
 .game__card.frontface-Ap.flip {
-  background: url(img/Aspades.png);
+  background: url("img/Aspades.png");
 }
 
 .game__card.frontface-6h.flip {
-  background: url(img/6hearts.png);
+  background: url("img/6hearts.png");
 }
 
 .game__card.frontface-7h.flip {
-  background: url(img/7hearts.png);
+  background: url("img/7hearts.png");
 }
 
 .game__card.frontface-8h.flip {
-  background: url(img/8hearts.png);
+  background: url("img/8hearts.png");
 }
 
 .game__card.frontface-9h.flip {
-  background: url(img/9hearts.png);
+  background: url("img/9hearts.png");
 }
 
 .game__card.frontface-10h.flip {
-  background: url(img/10hearts.png);
+  background: url("img/10hearts.png");
 }
 
 .game__card.frontface-Jh.flip {
-  background: url(img/Jhearts.png);
+  background: url("img/Jhearts.png");
 }
 
 .game__card.frontface-Qh.flip {
-  background: url(img/Qhearts.png);
+  background: url("img/Qhearts.png");
 }
 
 .game__card.frontface-Kh.flip {
-  background: url(img/Khearts.png);
+  background: url("img/Khearts.png");
 }
 
 .game__card.frontface-Ah.flip {
-  background: url(img/Ahearts.png);
+  background: url("img/Ahearts.png");
 }
 
 .game__card.frontface-6c.flip {
-  background: url(img/6clubs.png);
+  background: url("img/6clubs.png");
 }
 
 .game__card.frontface-7c.flip {
-  background: url(img/7clubs.png);
+  background: url("img/7clubs.png");
 }
 
 .game__card.frontface-8c.flip {
-  background: url(img/8clubs.png);
+  background: url("img/8clubs.png");
 }
 
 .game__card.frontface-9c.flip {
-  background: url(img/9clubs.png);
+  background: url("img/9clubs.png");
 }
 
 .game__card.frontface-10c.flip {
-  background: url(img/10clubs.png);
+  background: url("img/10clubs.png");
 }
 
 .game__card.frontface-Jc.flip {
-  background: url(img/Jclubs.png);
+  background: url("img/Jclubs.png");
 }
 
 .game__card.frontface-Qc.flip {
-  background: url(img/Qclubs.png);
+  background: url("img/Qclubs.png");
 }
 
 .game__card.frontface-Kc.flip {
-  background: url(img/Kclubs.png);
+  background: url("img/Kclubs.png");
 }
 
 .game__card.frontface-Ac.flip {
-  background: url(img/Aclubs.png);
+  background: url("img/Aclubs.png");
 }
-
 
 .modal-win {
   position: fixed;
@@ -409,10 +411,13 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 73, 128, 0.8999999761581421);
+  background-color: rgb(0 73 128 / 90%);
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition:
+    visibility 0s linear 0.25s,
+    opacity 0.25s 0s,
+    transform 0.25s;
 }
 
 .modal-lose {
@@ -421,10 +426,13 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 73, 128, 0.8999999761581421);
+  background-color: rgb(0 73 128 / 90%);
   visibility: hidden;
   transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition:
+    visibility 0s linear 0.25s,
+    opacity 0.25s 0s,
+    transform 0.25s;
 }
 
 .modal-content {
@@ -436,7 +444,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #C2F5FF;
+  background-color: #c2f5ff;
   padding: 1rem 1.5rem;
   width: 480px;
   height: 459px;
@@ -452,7 +460,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #C2F5FF;
+  background-color: #c2f5ff;
   padding: 1rem 1.5rem;
   width: 480px;
   height: 459px;
@@ -460,7 +468,7 @@ body {
 }
 
 .modal__img {
-  background: url(img/celebration.png);
+  background: url("img/celebration.png");
   margin-top: 26px;
   width: 96px;
   height: 96px;
@@ -468,7 +476,7 @@ body {
 }
 
 .modal__img_lose {
-  background: url(img/dead.png);
+  background: url("img/dead.png");
   margin-top: 26px;
   width: 96px;
   height: 96px;
@@ -477,7 +485,7 @@ body {
 
 .modal__title {
   color: #004980;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -487,7 +495,7 @@ body {
 
 .modal__title_lose {
   color: #004980;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -496,7 +504,7 @@ body {
 }
 
 .modal__text {
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -506,7 +514,7 @@ body {
 }
 
 .modal__text_lose {
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -517,7 +525,7 @@ body {
 
 .modal__time {
   color: #000;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
@@ -527,7 +535,7 @@ body {
 
 .modal__time_lose {
   color: #000;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
@@ -538,12 +546,12 @@ body {
 .modal__btn {
   border: none;
   border-radius: 12px;
-  background-color: rgba(122, 193, 0);
+  background-color: rgb(122 193 0);
   width: 246px;
   height: 48px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -554,12 +562,12 @@ body {
 .modal__btn_lose {
   border: none;
   border-radius: 12px;
-  background-color: rgba(122, 193, 0);
+  background-color: rgb(122 193 0);
   width: 246px;
   height: 48px;
-  color: #FFF;
+  color: #fff;
   text-align: center;
-  font-family: 'StratosSkyeng';
+  font-family: StratosSkyeng;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -569,6 +577,9 @@ body {
 
 .show-modal {
   visibility: visible;
-  transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transform: scale(1);
+  transition:
+    visibility 0s linear 0s,
+    opacity 0.25s 0s,
+    transform 0.25s;
 }
