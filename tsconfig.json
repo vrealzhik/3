@@ -6,6 +6,6 @@
         "module": "es6",
         "target": "ES5",
         "allowJs": true,
-        "moduleResolution": "node"
+        "moduleResolution": "classic"
     }
 }
